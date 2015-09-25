@@ -30,7 +30,8 @@ Contributors
 
 Acknowledgement
 ---------------
-The README and doc file are largely copied from [vim-textobj-underscore](https://github.com/lucapette/vim-textobj-underscore) by [lucapette](https://github.com/lucapette).
+- The README and doc file are largely copied from [vim-textobj-underscore](https://github.com/lucapette/vim-textobj-underscore) by [lucapette](https://github.com/lucapette).
+- Help when making this small plugin was provided by reddit user [VanLaser](https://www.reddit.com/user/VanLaser). Thanks alot.
 
 Copyright
 ---------
