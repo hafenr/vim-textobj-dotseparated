@@ -25,13 +25,17 @@ endfunction
 function! FindDotI()
     call search('\v(\.|\s|^)', 'eb', line('.'))
     " If not at the beginning of a line, move right.
-    if col('.') != 1
+    let char_under_cursor = getline('.')[col('.')-1]
+    let in_first_col = col('.') == 1
+    if !in_first_col || char_under_cursor =~ '\v(\.|\s)'
         normal! l
     endif
     let head_pos = getpos('.')
     call search('\v(\.|\s|$)', 'e', line('.'))
     " If not at the end of a line, move left.
-    if col('.') != col('$') - 1
+    let char_under_cursor = getline('.')[col('.')-1]
+    let in_last_col = col('.') == col('$') - 1
+    if !in_last_col || char_under_cursor =~ '\v(\.|\s)'
         normal! h
     endif
     let tail_pos = getpos('.')
