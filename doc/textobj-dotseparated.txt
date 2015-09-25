@@ -1,0 +1,35 @@
+*textobj-dotseparated.txt*	Text objects for dot-separated words
+
+Version 0.0.1
+
+CONTENTS					*textobj-dot-separated-contents*
+
+Introduction		|textobj-dot-separated-introduction|
+Copyright		|textobj-dot-separated-copyright|
+
+
+==============================================================================
+INTRODUCTION					*textobj-dot-separated-introduction*
+
+The *textobj-dot-separated* plugin provides two new |text-objects| which are
+triggered by `a.` and `i.` respectively. You can use them when you have to
+deal with the following type of words:
+
+- foo.bar.baz
+
+Now, suppose you have to change bar to qux (* for cursor position). You can do
+the following:
+
+`foo.b*ar.bar` and type `ci.` to get `foo.*.bar`. Or you can type `da.` to
+get `foobar`
+
+Latest version:
+http://github.com/hafenr/vim-textobj-dotseparated
+
+==============================================================================
+COPYRIGHT					*textobj-dot-separated-copyright*
+
+  Copyright (c) Robin Hafen. Distributed under the same terms as Vim itself.
+  See |license|.
+
+vim:tw=78:ts=8:ft=help:norl:
